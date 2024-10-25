@@ -1,0 +1,73 @@
+.items-row {
+  display: flex;
+  gap: 20px;
+  
+  overflow-x: auto;
+  /* Smooth scrolling on compatible browsers */
+  scroll-behavior: smooth;
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.item {
+  flex: 0 0 auto;
+  position: relative;
+  width: 200px;
+  height: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  border: 1px solid black;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.item-text h2 {
+  margin: 0;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.item-text p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.poppins-light {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+  color: red;
+}
+
+.allura-regular {
+  font-family: "Allura", serif;
+  font-weight: 400;
+  font-style: normal;
+  color:  red;
+}

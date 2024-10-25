@@ -1,0 +1,31 @@
+<%- include('partials/header.ejs') %>
+
+<div class="my-5 text-center">
+  <!-- Add text-center class -->
+  <h1 class="display-5 fw-bold text-border">Crate Post</h1>
+  <!-- Remove inline style -->
+</div>
+<div class="container d-flex justify-content-center mt-1 mb-5">
+  <!-- Centering the form -->
+  <form class="w-50" action="/create-post" method="POST">
+    <!-- Set a width for the form -->
+    <input
+      name="title"
+      type="text"
+      class="feedback-input form-control"
+      placeholder="Title"
+      required
+    />
+
+    <textarea
+      name="content"
+      type="text"
+      class="feedback-input form-control"
+      placeholder="content"
+      required
+    ></textarea>
+    <input type="submit" value="SUBMIT" class="btn btn-primary" />
+  </form>
+</div>
+
+<%- include('partials/footer.ejs') %>

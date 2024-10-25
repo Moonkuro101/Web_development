@@ -1,0 +1,92 @@
+.gradient-background {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 143, 185, 0.5) 0%,
+    /* Opacity set to 0.5 */ rgba(255, 189, 213, 0.5) 34%,
+    /* Opacity set to 0.5 */ rgba(255, 211, 146, 0.5) 69%,
+    /* Opacity set to 0.5 */ rgba(242, 237, 148, 0.5) 100%
+      /* Opacity set to 0.5 */
+  );
+}
+
+hr {
+  margin: 0;
+  border: 0.5px solid rgb(255, 255, 255);
+}
+
+.custom-hr {
+  border: dotted;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
+
+.custom-hr2 {
+  border-bottom: none;
+  width: 50%;
+  margin: 50px auto;
+  border: 1px solid black;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+#Programmer {
+  font-size: 50px;
+  background: linear-gradient(to left, #5fb3e0 0%, #c982dd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.skill-img {
+  height: 100%;
+  width: 75%;
+}
+
+.Profile {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 50px;
+  background: linear-gradient(to top, #ffb0b0 0%, #ffd09b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font: 700;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: repeat(1, 1fr);
+  width: 50%;
+  margin: 100px auto 0 auto;
+  text-align: left;
+  row-gap: 2rem;
+}
+
+h2 {
+  color: #8acdd7;
+}
+
+p {
+  font-size: 20px;
+}
+
+.d-block.mx-auto.mb-4.img-fluid {
+  max-width: 100%;
+  height: 300px; /* Custom height for larger screens */
+  width: auto;
+}
+
+@media (max-width: 576px) {
+  .d-block.mx-auto.mb-4.img-fluid {
+    height: auto; /* Let the image scale naturally */
+    width: 100%;  /* Ensure it remains responsive */
+  }
+}

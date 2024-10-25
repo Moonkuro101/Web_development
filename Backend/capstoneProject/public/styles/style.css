@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.gradient-background {
+  background: linear-gradient(90deg, #96c0ff, #3586ff, #9dbff3);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between; /* Keep this if you want brand and navbar spaced out */
+  align-items: center; /* Vertically center items */
+  max-width: 1200px; /* Set a maximum width for the navbar container */
+  margin: 0 auto; /* Center the container */
+  padding: 0 20px; /* Add some horizontal padding */
+}
+
+.brand {
+  font-size: 24px;
+  font-weight: 300;
+  margin: 20px;
+}
+
+.brand a {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.navbar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  color: white;
+  text-shadow: 5px 3px 4px #000000;
+}
+
+a {
+  text-decoration: none; /* Removes underline */
+}
+a#gray {
+  color: gray;
+}
+a#gray:hover {
+  color: white;
+}
+a#white {
+  color: white;
+}
+
+.text-border {
+  color: white; /* Text color */
+  text-shadow: 
+    -2px -2px 0px black,  
+    1px -1px 0px black,
+    -1px 1px 0px black,
+    1px 1px 0px black; /* Creates the border effect */
+}
