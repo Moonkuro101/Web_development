@@ -71,8 +71,6 @@ app.post("/delete-post/:id", (req, res) => {
   res.redirect("/posts");
 });
 
-console.log("Server is running");
-
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
