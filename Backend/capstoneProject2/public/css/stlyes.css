@@ -118,3 +118,11 @@ p {
   font-weight: 600;
   font-size: 25px;
 }
+
+h3{
+  margin: 0; /* Remove default margin */
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+
+}

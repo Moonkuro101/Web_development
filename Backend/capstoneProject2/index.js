@@ -18,7 +18,8 @@ app.get("/", async (req, res) => {
     let celsius = (kevin - 273.15).toFixed(1);
     res.render("index.ejs", { data: result.data, celsius: celsius });
   } catch (err) {
-    return;
+    res.render("index.ejs", { error: err.response.data });
+    console.log(err);
   }
 });
 
@@ -32,7 +33,7 @@ app.post("/", async (req, res) => {
     let celsius = (kevin - 273.15).toFixed(1);
     res.render("index.ejs", { data: result.data, celsius: celsius });
   } catch (err) {
-    return;
+    res.render("index.ejs");
   }
 });
 

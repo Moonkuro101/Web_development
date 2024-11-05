@@ -14,7 +14,6 @@
   </head>
   <body>
     <div class="container">
-      <% if (locals.data) { %>
       <div class="my-card">
         <div class="search">
           <form action="/" method="post">
@@ -39,6 +38,7 @@
         </div>
         <div class="weather">
           <div id="weather"><img src="images/weather.png" alt="" /></div>
+          <% if (locals.data) { %>
           <h2>Weather in <br /><%= data.name %></h2>
         </div>
         <div class="detail">
@@ -49,7 +49,9 @@
           <p>Wind speed: <%= data.wind.speed %> km/h</p>
         </div>
       </div>
-      <% } else { %>Loading...<%} %>
+      <% } else { %>
+      <h3>There is no city by that name,<br>Try put another name.</h3>
+      <%} %>
     </div>
   </body>
 </html>
